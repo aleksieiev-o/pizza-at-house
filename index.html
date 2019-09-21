@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Пицца на дом</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css">
+    <link rel="shortcut icon" type="image/png" href="static/images/general/fav_icon.png"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body class="index-page">
+    <div class="s-preloader">
+      <div class="loader">
+        <div class="ball one">
+          <div class="inner"></div>
+        </div>
+        <div class="ball two">
+          <div class="inner"></div>
+        </div>
+        <div class="ball three">
+          <div class="inner"></div>
+        </div>
+        <div class="ball four">
+          <div class="inner"></div>
+        </div>
+        <div class="ball five">
+          <div class="inner"></div>
+        </div>
+        <div class="ball six">
+          <div class="inner"></div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <header class="header text--white" id="start">
+        <div class="header-top">
+          <div class="container"><img class="header-top__logo" src="static/images/general/logo.png" alt="Пицца на дом">
+            <nav class="header-top__nav">
+              <ul class="header-top__list">
+                <li class="header-top__item"><a class="header-top__link js-anchor js-anchor--top" href="#start">Начало</a></li>
+                <li class="header-top__item"><a class="header-top__link js-anchor js-anchor--top" href="#pizza">Заказать пиццу</a></li>
+                <li class="header-top__item"><a class="header-top__link js-anchor js-anchor--top" href="#salad">Заказать закуски</a></li>
+                <li class="header-top__item"><a class="header-top__link js-anchor js-anchor--top" href="#drink">Заказать напитки</a></li>
+              </ul>
+            </nav>
+            <button class="hamburger hamburger--vortex" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+            <div class="header-top__callback">
+              <div class="header-top__telephone">
+                <svg class="svg-sprite-icon icon-phone_top header-top__phone-icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#phone_top"></use>
+                </svg><a class="phone header-top__phone-number" href="tel:+79998881020">+7 (999) 888 10 20</a>
+              </div><a class="header-top__order" href="#">Заказать бесплатный звонок</a>
+            </div>
+            <nav class="header-top__nav header-top__nav-mobile js-nav">
+              <ul class="header-top__list">
+                <li class="header-top__item"><a class="header-top__link js-anchor js-anchor--top" href="#start">Начало</a></li>
+                <li class="header-top__item"><a class="header-top__link js-anchor js-anchor--top" href="#pizza">Заказать пиццу</a></li>
+                <li class="header-top__item"><a class="header-top__link js-anchor js-anchor--top" href="#salad">Заказать закуски</a></li>
+                <li class="header-top__item"><a class="header-top__link js-anchor js-anchor--top" href="#drink">Заказать напитки</a></li>
+              </ul>
+              <div class="header-top__callback header-top__callback--mobile">
+                <div class="header-top__callback__telephone">
+                  <svg class="svg-sprite-icon icon-phone_top header-top__phone-icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#phone_top"></use>
+                  </svg><a class="phone header-top__phone-number" href="tel:+79998881020">+7 (999) 888 10 20</a>
+                </div><a class="header-top__order" href="#">Заказать бесплатный звонок</a>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="header-main js-header-slider">
+          <div class="header-main__img" style="background-image:url('static/images/general/bg1_1.jpg')">
+            <div class="container container--header-main">
+              <div class="header-main__label">
+                <h1 class="header-main__title">Интересное название про пиццу</h1>
+                <p class="header-main__subtitle">Великолепная, пикантная, горячая итальянская пицца с аппетитным французским сыром</p>
+                <input class="btn submit-button submit-button--header text--white" type="submit" value="Сделать заказ">
+              </div><img class="header-main__photo" src="static/images/general/bg1_pizza.png" alt="Фото пиццы">
+            </div>
+          </div>
+          <div class="header-main__img" style="background-image:url('static/images/general/bg1_2.jpg')">
+            <div class="container container--header-main">
+              <div class="header-main__label">
+                <h1 class="header-main__title">Интересное название про салат</h1>
+                <p class="header-main__subtitle">Великолепный, пикантный итальянский салат с аппетитным французским сыром</p>
+                <input class="btn submit-button submit-button--header text--white" type="submit" value="Сделать заказ">
+              </div><img class="header-main__photo" src="static/images/general/bg1_salad.png" alt="Фото салата">
+            </div>
+          </div>
+          <div class="header-main__img" style="background-image:url('static/images/general/bg1_3.jpg')">
+            <div class="container container--header-main">
+              <div class="header-main__label">
+                <h1 class="header-main__title">Интересное название про напиток</h1>
+                <p class="header-main__subtitle">Охлаждающий и бодрящий напиток с неповторимым вкусом</p>
+                <input class="btn submit-button submit-button--header text--white" type="submit" value="Сделать заказ">
+              </div><img class="header-main__photo" src="static/images/general/bg1_drink.png" alt="Фото напитка">
+            </div>
+          </div>
+        </div>
+      </header>
+      <svg class="svg-sprite-icon icon-next_screen next-screen-button">
+        <use xlink:href="static/images/svg/symbol/sprite.svg#next_screen"></use>
+      </svg>
+      <div class="content">
+        <section class="product" id="pizza">
+          <div class="container container--product">
+            <h2 class="product__title title--dark title--black">Выбрать пиццу</h2>
+            <p class="product__text text--dark">Собрать пиццу самому, воспользовавшись специальным конструктором или воспользоваться коллекцией ниже</p>
+            <div class="product-main">
+              <div class="product-main__choice">
+                <h3 class="product__title product__title--choice js-btn product__title--active title--dark title--bold">Выбрать готовое решение</h3>
+                <h3 class="product__title product__title--choice js-btn js-hide title--dark title--bold">Открыть конструктор</h3>
+              </div>
+              <div class="product-main__slider js-pizza-slider js-container js-block">
+                        <div class="product-main__block">
+                          <div class="product-main__header"><img class="product-main__prev" src="static/images/content/s-pizza1.png" alt="Пицца Неаполитана">
+                            <div class="product-main__data"><span class="product-main__dimension product-main__dimension--small text--white js-size-small size-active" data-price="1000">26 см.</span><span class="product-main__dimension product-main__dimension--big text--white js-size-big" data-price="1200">38 см.</span><span class="product-main__cost text--white js-cost">1000 руб.</span></div>
+                          </div>
+                          <div class="product-main__body">
+                            <h3 class="product-main__body__name title--dark title--bold">Пицца Неаполитана</h3>
+                            <p class="product-main__body__composition text--dark">Состав: Фирменный томатный соус, моцарелла, балык, шампиньоны свежие, бекон,салями итальянская, маслины, тимьян сушеный.</p>
+                          </div>
+                          <div class="product-main__footer">
+                            <div class="product-main__form js-prod-amount">
+                              <svg class="svg-sprite-icon icon-minus product-main__icon-minus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#minus"></use>
+                              </svg>
+                              <input class="product-main__amount text--dark" type="text" name="amount" value="1" readonly>
+                              <svg class="svg-sprite-icon icon-plus product-main__icon-plus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#plus"></use>
+                              </svg>
+                            </div>
+                            <button class="btn submit-button submit-button--product js-submit text--white">Заказать</button>
+                          </div>
+                        </div>
+                        <div class="product-main__block">
+                          <div class="product-main__header"><img class="product-main__prev" src="static/images/content/s-pizza2.png" alt="Пицца Тропикана">
+                            <div class="product-main__data"><span class="product-main__dimension product-main__dimension--small text--white js-size-small size-active" data-price="1100">26 см.</span><span class="product-main__dimension product-main__dimension--big text--white js-size-big" data-price="1300">38 см.</span><span class="product-main__cost text--white js-cost">1100 руб.</span></div>
+                          </div>
+                          <div class="product-main__body">
+                            <h3 class="product-main__body__name title--dark title--bold">Пицца Тропикана</h3>
+                            <p class="product-main__body__composition text--dark">Состав: Фирменный томатный соус, моцарелла, балык, шампиньоны свежие, бекон,салями итальянская, маслины, тимьян сушеный.</p>
+                          </div>
+                          <div class="product-main__footer">
+                            <div class="product-main__form js-prod-amount">
+                              <svg class="svg-sprite-icon icon-minus product-main__icon-minus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#minus"></use>
+                              </svg>
+                              <input class="product-main__amount text--dark" type="text" name="amount" value="1" readonly>
+                              <svg class="svg-sprite-icon icon-plus product-main__icon-plus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#plus"></use>
+                              </svg>
+                            </div>
+                            <button class="btn submit-button submit-button--product js-submit text--white">Заказать</button>
+                          </div>
+                        </div>
+                        <div class="product-main__block">
+                          <div class="product-main__header"><img class="product-main__prev" src="static/images/content/s-pizza3.png" alt="Пицца Пепперони">
+                            <div class="product-main__data"><span class="product-main__dimension product-main__dimension--small text--white js-size-small size-active" data-price="1300">26 см.</span><span class="product-main__dimension product-main__dimension--big text--white js-size-big" data-price="1400">38 см.</span><span class="product-main__cost text--white js-cost">1300 руб.</span></div>
+                          </div>
+                          <div class="product-main__body">
+                            <h3 class="product-main__body__name title--dark title--bold">Пицца Пепперони</h3>
+                            <p class="product-main__body__composition text--dark">Состав: Фирменный томатный соус, моцарелла, балык, шампиньоны свежие, бекон,салями итальянская, маслины, тимьян сушеный.</p>
+                          </div>
+                          <div class="product-main__footer">
+                            <div class="product-main__form js-prod-amount">
+                              <svg class="svg-sprite-icon icon-minus product-main__icon-minus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#minus"></use>
+                              </svg>
+                              <input class="product-main__amount text--dark" type="text" name="amount" value="1" readonly>
+                              <svg class="svg-sprite-icon icon-plus product-main__icon-plus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#plus"></use>
+                              </svg>
+                            </div>
+                            <button class="btn submit-button submit-button--product js-submit text--white">Заказать</button>
+                          </div>
+                        </div>
+                        <div class="product-main__block">
+                          <div class="product-main__header"><img class="product-main__prev" src="static/images/content/s-pizza4.png" alt="Пицца Тропикана">
+                            <div class="product-main__data"><span class="product-main__dimension product-main__dimension--small text--white js-size-small size-active" data-price="1100">26 см.</span><span class="product-main__dimension product-main__dimension--big text--white js-size-big" data-price="1500">38 см.</span><span class="product-main__cost text--white js-cost">1100 руб.</span></div>
+                          </div>
+                          <div class="product-main__body">
+                            <h3 class="product-main__body__name title--dark title--bold">Пицца Тропикана</h3>
+                            <p class="product-main__body__composition text--dark">Состав: Фирменный томатный соус, моцарелла, балык, шампиньоны свежие, бекон,салями итальянская, маслины, тимьян сушеный.</p>
+                          </div>
+                          <div class="product-main__footer">
+                            <div class="product-main__form js-prod-amount">
+                              <svg class="svg-sprite-icon icon-minus product-main__icon-minus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#minus"></use>
+                              </svg>
+                              <input class="product-main__amount text--dark" type="text" name="amount" value="1" readonly>
+                              <svg class="svg-sprite-icon icon-plus product-main__icon-plus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#plus"></use>
+                              </svg>
+                            </div>
+                            <button class="btn submit-button submit-button--product js-submit text--white">Заказать</button>
+                          </div>
+                        </div>
+                        <div class="product-main__block">
+                          <div class="product-main__header"><img class="product-main__prev" src="static/images/content/s-pizza5.png" alt="Пицца Пепперони">
+                            <div class="product-main__data"><span class="product-main__dimension product-main__dimension--small text--white js-size-small size-active" data-price="1000">26 см.</span><span class="product-main__dimension product-main__dimension--big text--white js-size-big" data-price="1200">38 см.</span><span class="product-main__cost text--white js-cost">1000 руб.</span></div>
+                          </div>
+                          <div class="product-main__body">
+                            <h3 class="product-main__body__name title--dark title--bold">Пицца Пепперони</h3>
+                            <p class="product-main__body__composition text--dark">Состав: Фирменный томатный соус, моцарелла, балык, шампиньоны свежие, бекон,салями итальянская, маслины, тимьян сушеный.</p>
+                          </div>
+                          <div class="product-main__footer">
+                            <div class="product-main__form js-prod-amount">
+                              <svg class="svg-sprite-icon icon-minus product-main__icon-minus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#minus"></use>
+                              </svg>
+                              <input class="product-main__amount text--dark" type="text" name="amount" value="1" readonly>
+                              <svg class="svg-sprite-icon icon-plus product-main__icon-plus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#plus"></use>
+                              </svg>
+                            </div>
+                            <button class="btn submit-button submit-button--product js-submit text--white">Заказать</button>
+                          </div>
+                        </div>
+                        <div class="product-main__block">
+                          <div class="product-main__header"><img class="product-main__prev" src="static/images/content/s-pizza6.png" alt="Пицца Неаполитана">
+                            <div class="product-main__data"><span class="product-main__dimension product-main__dimension--small text--white js-size-small size-active" data-price="1000">26 см.</span><span class="product-main__dimension product-main__dimension--big text--white js-size-big" data-price="1200">38 см.</span><span class="product-main__cost text--white js-cost">1000 руб.</span></div>
+                          </div>
+                          <div class="product-main__body">
+                            <h3 class="product-main__body__name title--dark title--bold">Пицца Неаполитана</h3>
+                            <p class="product-main__body__composition text--dark">Состав: Фирменный томатный соус, моцарелла, балык, шампиньоны свежие, бекон,салями итальянская, маслины, тимьян сушеный.</p>
+                          </div>
+                          <div class="product-main__footer">
+                            <div class="product-main__form js-prod-amount">
+                              <svg class="svg-sprite-icon icon-minus product-main__icon-minus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#minus"></use>
+                              </svg>
+                              <input class="product-main__amount text--dark" type="text" name="amount" value="1" readonly>
+                              <svg class="svg-sprite-icon icon-plus product-main__icon-plus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#plus"></use>
+                              </svg>
+                            </div>
+                            <button class="btn submit-button submit-button--product js-submit text--white">Заказать</button>
+                          </div>
+                        </div>
+                        <div class="product-main__block">
+                          <div class="product-main__header"><img class="product-main__prev" src="static/images/content/s-pizza7.png" alt="Пицца Пепперони">
+                            <div class="product-main__data"><span class="product-main__dimension product-main__dimension--small text--white js-size-small size-active" data-price="1000">26 см.</span><span class="product-main__dimension product-main__dimension--big text--white js-size-big" data-price="1200">38 см.</span><span class="product-main__cost text--white js-cost">1000 руб.</span></div>
+                          </div>
+                          <div class="product-main__body">
+                            <h3 class="product-main__body__name title--dark title--bold">Пицца Пепперони</h3>
+                            <p class="product-main__body__composition text--dark">Состав: Фирменный томатный соус, моцарелла, балык, шампиньоны свежие, бекон,салями итальянская, маслины, тимьян сушеный.</p>
+                          </div>
+                          <div class="product-main__footer">
+                            <div class="product-main__form js-prod-amount">
+                              <svg class="svg-sprite-icon icon-minus product-main__icon-minus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#minus"></use>
+                              </svg>
+                              <input class="product-main__amount text--dark" type="text" name="amount" value="1" readonly>
+                              <svg class="svg-sprite-icon icon-plus product-main__icon-plus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#plus"></use>
+                              </svg>
+                            </div>
+                            <button class="btn submit-button submit-button--product js-submit text--white">Заказать</button>
+                          </div>
+                        </div>
+              </div>
+              <div class="product-main__constructor js-container js-block js-toggle">
+                <div class="block-left">
+                  <div class="block-left__group block-left__group--size">
+                    <h2 class="product__title title--dark title--bold">Выберите размер и количество</h2>
+                    <div class="block-left__size-wrapper">
+                      <div class="product-main__data product-main__data--constr"><span class="product-main__dimension product-main__dimension--small text--white size-active">26 см.</span><span class="product-main__dimension product-main__dimension--big text--white">38 см.</span><span class="product-main__cost text--white">1200 руб.</span></div>
+                      <div class="product-main__form product-main__form--constr">
+                        <svg class="svg-sprite-icon icon-minus product-main__icon-constr">
+                          <use xlink:href="static/images/svg/symbol/sprite.svg#minus"></use>
+                        </svg>
+                        <input class="product-main__amount text--dark" type="text" name="amount" value="1" readonly>
+                        <svg class="svg-sprite-icon icon-plus product-main__icon-constr">
+                          <use xlink:href="static/images/svg/symbol/sprite.svg#plus"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block-left__group block-left__group--filling">
+                    <h2 class="product__title title--dark title--bold">Основное наполнение</h2>
+                    <p class="product-main__constructor__desc text--dark">Основа из теста, соус на основе томатов, сыр моцарелла</p>
+                  </div>
+                  <div class="block-left__group block-left__group--filling product-main__constructor__filling--optional">
+                    <h2 class="product__title title--dark title--bold">Дополнительное наполнение</h2>
+                    <ul class="block-left__check-wrapper">
+                              <li class="block-left__checkbox" data-cost="72">
+                                <div class="checkbox">
+                                  <input class="block-left__input" id="check1" type="checkbox" value="dorBlueCheese" name="filling"><span class="checkbox__custom"></span>
+                                  <label class="product__text label--name text--dark" for="check1">Сыр &quot;Дор Блю&quot;</label>
+                                  <label class="product__text label--price text--dark" for="check1">72 руб.</label>
+                                </div>
+                              </li>
+                              <li class="block-left__checkbox" data-cost="60">
+                                <div class="checkbox">
+                                  <input class="block-left__input" id="check2" type="checkbox" value="cheeseRadomer" name="filling"><span class="checkbox__custom"></span>
+                                  <label class="product__text label--name text--dark" for="check2">Сыр &quot;Радомер&quot;</label>
+                                  <label class="product__text label--price text--dark" for="check2">60 руб.</label>
+                                </div>
+                              </li>
+                              <li class="block-left__checkbox" data-cost="53">
+                                <div class="checkbox">
+                                  <input class="block-left__input" id="check3" type="checkbox" value="cheeseGouda" name="filling"><span class="checkbox__custom"></span>
+                                  <label class="product__text label--name text--dark" for="check3">Сыр &quot;Гауда&quot;</label>
+                                  <label class="product__text label--price text--dark" for="check3">53 руб.</label>
+                                </div>
+                              </li>
+                              <li class="block-left__checkbox" data-cost="50">
+                                <div class="checkbox">
+                                  <input class="block-left__input" id="check4" type="checkbox" value="mozzarellacheese" name="filling"><span class="checkbox__custom"></span>
+                                  <label class="product__text label--name text--dark" for="check4">Сыр &quot;Моцарелла&quot;</label>
+                                  <label class="product__text label--price text--dark" for="check4">50 руб.</label>
+                                </div>
+                              </li>
+                              <li class="block-left__checkbox" data-cost="52">
+                                <div class="checkbox">
+                                  <input class="block-left__input" id="check5" type="checkbox" value="cheesFeta" name="filling"><span class="checkbox__custom"></span>
+                                  <label class="product__text label--name text--dark" for="check5">Сыр &quot;Фета&quot;</label>
+                                  <label class="product__text label--price text--dark" for="check5">52 руб.</label>
+                                </div>
+                              </li>
+                              <li class="block-left__checkbox" data-cost="70">
+                                <div class="checkbox">
+                                  <input class="block-left__input" id="check6" type="checkbox" value="cheeseParmesan" name="filling"><span class="checkbox__custom"></span>
+                                  <label class="product__text label--name text--dark" for="check6">Сыр &quot;Пармезан&quot;</label>
+                                  <label class="product__text label--price text--dark" for="check6">70 руб.</label>
+                                </div>
+                              </li>
+                              <li class="block-left__checkbox" data-cost="50">
+                                <div class="checkbox">
+                                  <input class="block-left__input" id="check7" type="checkbox" value="chickenfillet" name="filling"><span class="checkbox__custom"></span>
+                                  <label class="product__text label--name text--dark" for="check7">Куриное филе</label>
+                                  <label class="product__text label--price text--dark" for="check7">50 руб.</label>
+                                </div>
+                              </li>
+                              <li class="block-left__checkbox" data-cost="53">
+                                <div class="checkbox">
+                                  <input class="block-left__input" id="check8" type="checkbox" value="balikMeat" name="filling"><span class="checkbox__custom"></span>
+                                  <label class="product__text label--name text--dark" for="check8">Балык мясной</label>
+                                  <label class="product__text label--price text--dark" for="check8">53 руб.</label>
+                                </div>
+                              </li>
+                              <li class="block-left__checkbox" data-cost="60">
+                                <div class="checkbox">
+                                  <input class="block-left__input" id="check9" type="checkbox" value="bacon" name="filling"><span class="checkbox__custom"></span>
+                                  <label class="product__text label--name text--dark" for="check9">Бекон</label>
+                                  <label class="product__text label--price text--dark" for="check9">60 руб.</label>
+                                </div>
+                              </li>
+                              <li class="block-left__checkbox" data-cost="60">
+                                <div class="checkbox">
+                                  <input class="block-left__input" id="check10" type="checkbox" value="huntingSausages" name="filling"><span class="checkbox__custom"></span>
+                                  <label class="product__text label--name text--dark" for="check10">Охотничьи колбаски</label>
+                                  <label class="product__text label--price text--dark" for="check10">60 руб.</label>
+                                </div>
+                              </li>
+                              <li class="block-left__checkbox" data-cost="20">
+                                <div class="checkbox">
+                                  <input class="block-left__input" id="check11" type="checkbox" value="tomato" name="filling"><span class="checkbox__custom"></span>
+                                  <label class="product__text label--name text--dark" for="check11">Помидор</label>
+                                  <label class="product__text label--price text--dark" for="check11">20 руб.</label>
+                                </div>
+                              </li>
+                              <li class="block-left__checkbox" data-cost="30">
+                                <div class="checkbox">
+                                  <input class="block-left__input" id="check12" type="checkbox" value="olives" name="filling"><span class="checkbox__custom"></span>
+                                  <label class="product__text label--name text--dark" for="check12">Маслины</label>
+                                  <label class="product__text label--price text--dark" for="check12">30 руб.</label>
+                                </div>
+                              </li>
+                              <li class="block-left__checkbox" data-cost="30">
+                                <div class="checkbox">
+                                  <input class="block-left__input" id="check13" type="checkbox" value="freshChampignons" name="filling"><span class="checkbox__custom"></span>
+                                  <label class="product__text label--name text--dark" for="check13">Шампиньоны свежие</label>
+                                  <label class="product__text label--price text--dark" for="check13">30 руб.</label>
+                                </div>
+                              </li>
+                              <li class="block-left__checkbox" data-cost="10">
+                                <div class="checkbox">
+                                  <input class="block-left__input" id="check14" type="checkbox" value="parsley" name="filling"><span class="checkbox__custom"></span>
+                                  <label class="product__text label--name text--dark" for="check14">Петрушка</label>
+                                  <label class="product__text label--price text--dark" for="check14">10 руб.</label>
+                                </div>
+                              </li>
+                              <li class="block-left__checkbox" data-cost="20">
+                                <div class="checkbox">
+                                  <input class="block-left__input" id="check15" type="checkbox" value="chilliPeppers" name="filling"><span class="checkbox__custom"></span>
+                                  <label class="product__text label--name text--dark" for="check15">Перец чилли</label>
+                                  <label class="product__text label--price text--dark" for="check15">20 руб.</label>
+                                </div>
+                              </li>
+                              <li class="block-left__checkbox" data-cost="20">
+                                <div class="checkbox">
+                                  <input class="block-left__input" id="check16" type="checkbox" value="pepperoniPepper" name="filling"><span class="checkbox__custom"></span>
+                                  <label class="product__text label--name text--dark" for="check16">Перец пепперони</label>
+                                  <label class="product__text label--price text--dark" for="check16">20 руб.</label>
+                                </div>
+                              </li>
+                              <li class="block-left__checkbox" data-cost="50">
+                                <div class="checkbox">
+                                  <input class="block-left__input" id="check17" type="checkbox" value="italianSalami" name="filling"><span class="checkbox__custom"></span>
+                                  <label class="product__text label--name text--dark" for="check17">Салями итальянская</label>
+                                  <label class="product__text label--price text--dark" for="check17">50 руб.</label>
+                                </div>
+                              </li>
+                              <li class="block-left__checkbox" data-cost="30">
+                                <div class="checkbox">
+                                  <input class="block-left__input" id="check18" type="checkbox" value="pineapple" name="filling"><span class="checkbox__custom"></span>
+                                  <label class="product__text label--name text--dark" for="check18">Ананас</label>
+                                  <label class="product__text label--price text--dark" for="check18">30 руб.</label>
+                                </div>
+                              </li>
+                    </ul>
+                  </div>
+                  <div class="block-left__group block-left__group--prev">
+                    <div class="product__delivery__form product__delivery__form--big product__delivery__form--buttons">
+                      <button class="btn submit-button submit-button--constr submit-button--product text--white">Заказать</button>
+                      <input class="product__menu__reset product__menu__reset--delivery text--dark" type="reset" name="reset" value="Сбросить">
+                    </div>
+                  </div>
+                </div>
+                <div class="block-right"><img class="product-main__prev product-main__prev--constr" src="static/images/content/pizza1.png" alt="Фото пиццы"></div>
+              </div>
+              <div class="pizza-main__arrow">
+                <svg class="svg-sprite-icon icon-next pizza-main__arrow__next">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#next"></use>
+                </svg>
+                <svg class="svg-sprite-icon icon-prev pizza-main__arrow__prev">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#prev"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="product product--img" id="salad" style="background-image:url('static/images/general/bg3.jpg')">
+          <div class="container container--product container--salad">
+            <h2 class="product__title title--white title--black">Выбрать закуски</h2>
+            <p class="product__text product__text--salad text--white">Не забудьте выбрать свежие закуски и салаты от нашего шеф-повара, которые гармонично дополнят ваше меню сегодня</p>
+            <div class="product-main">
+              <div class="product-main__slider js-salad-slider js-container">
+                        <div class="product-main__block product-main__block--salad">
+                          <div class="product-main__header product-main__header--salad"><img class="product-main__prev product-main__prev--salad" src="static/images/content/s-salat1.png" alt="Салат Греческий">
+                            <div class="product-main__data"><span class="product-main__dimension product-main__dimension--small text--white js-size-small size-active" data-price="330">100 гр.</span><span class="product-main__dimension product-main__dimension--big text--white js-size-big" data-price="530">200 гр.</span><span class="product-main__cost text--white js-cost">330 руб.</span></div>
+                          </div>
+                          <div class="product-main__body">
+                            <h3 class="product-main__body__name title--dark title--bold">Салат Греческий</h3>
+                            <p class="product-main__body__composition product-main__body__composition--salad text--dark">Состав: сыр, грибы, чеснок, острый перец, еще длинное наименование.</p>
+                          </div>
+                          <div class="product-main__footer">
+                            <div class="product-main__form js-prod-amount">
+                              <svg class="svg-sprite-icon icon-minus product-main__icon-minus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#minus"></use>
+                              </svg>
+                              <input class="product-main__amount text--dark" type="text" name="amount" value="1" readonly>
+                              <svg class="svg-sprite-icon icon-plus product-main__icon-plus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#plus"></use>
+                              </svg>
+                            </div>
+                            <button class="btn submit-button submit-button--product text--white js-submit">Заказать</button>
+                          </div>
+                        </div>
+                        <div class="product-main__block product-main__block--salad">
+                          <div class="product-main__header product-main__header--salad"><img class="product-main__prev product-main__prev--salad" src="static/images/content/s-salat2.png" alt="Салат Оливье">
+                            <div class="product-main__data"><span class="product-main__dimension product-main__dimension--small text--white js-size-small size-active" data-price="310">100 гр.</span><span class="product-main__dimension product-main__dimension--big text--white js-size-big" data-price="520">200 гр.</span><span class="product-main__cost text--white js-cost">310 руб.</span></div>
+                          </div>
+                          <div class="product-main__body">
+                            <h3 class="product-main__body__name title--dark title--bold">Салат Оливье</h3>
+                            <p class="product-main__body__composition product-main__body__composition--salad text--dark">Состав: сыр, грибы, чеснок, острый перец, еще длинное наименование.</p>
+                          </div>
+                          <div class="product-main__footer">
+                            <div class="product-main__form js-prod-amount">
+                              <svg class="svg-sprite-icon icon-minus product-main__icon-minus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#minus"></use>
+                              </svg>
+                              <input class="product-main__amount text--dark" type="text" name="amount" value="1" readonly>
+                              <svg class="svg-sprite-icon icon-plus product-main__icon-plus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#plus"></use>
+                              </svg>
+                            </div>
+                            <button class="btn submit-button submit-button--product text--white js-submit">Заказать</button>
+                          </div>
+                        </div>
+                        <div class="product-main__block product-main__block--salad">
+                          <div class="product-main__header product-main__header--salad"><img class="product-main__prev product-main__prev--salad" src="static/images/content/s-salat3.png" alt="Салат Овощной">
+                            <div class="product-main__data"><span class="product-main__dimension product-main__dimension--small text--white js-size-small size-active" data-price="300">100 гр.</span><span class="product-main__dimension product-main__dimension--big text--white js-size-big" data-price="540">200 гр.</span><span class="product-main__cost text--white js-cost">300 руб.</span></div>
+                          </div>
+                          <div class="product-main__body">
+                            <h3 class="product-main__body__name title--dark title--bold">Салат Овощной</h3>
+                            <p class="product-main__body__composition product-main__body__composition--salad text--dark">Состав: сыр, грибы, чеснок, острый перец, еще длинное наименование.</p>
+                          </div>
+                          <div class="product-main__footer">
+                            <div class="product-main__form js-prod-amount">
+                              <svg class="svg-sprite-icon icon-minus product-main__icon-minus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#minus"></use>
+                              </svg>
+                              <input class="product-main__amount text--dark" type="text" name="amount" value="1" readonly>
+                              <svg class="svg-sprite-icon icon-plus product-main__icon-plus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#plus"></use>
+                              </svg>
+                            </div>
+                            <button class="btn submit-button submit-button--product text--white js-submit">Заказать</button>
+                          </div>
+                        </div>
+                        <div class="product-main__block product-main__block--salad">
+                          <div class="product-main__header product-main__header--salad"><img class="product-main__prev product-main__prev--salad" src="static/images/content/s-salat4.png" alt="Салат Крабовый">
+                            <div class="product-main__data"><span class="product-main__dimension product-main__dimension--small text--white js-size-small size-active" data-price="350">100 гр.</span><span class="product-main__dimension product-main__dimension--big text--white js-size-big" data-price="510">200 гр.</span><span class="product-main__cost text--white js-cost">350 руб.</span></div>
+                          </div>
+                          <div class="product-main__body">
+                            <h3 class="product-main__body__name title--dark title--bold">Салат Крабовый</h3>
+                            <p class="product-main__body__composition product-main__body__composition--salad text--dark">Состав: сыр, грибы, чеснок, острый перец, еще длинное наименование.</p>
+                          </div>
+                          <div class="product-main__footer">
+                            <div class="product-main__form js-prod-amount">
+                              <svg class="svg-sprite-icon icon-minus product-main__icon-minus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#minus"></use>
+                              </svg>
+                              <input class="product-main__amount text--dark" type="text" name="amount" value="1" readonly>
+                              <svg class="svg-sprite-icon icon-plus product-main__icon-plus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#plus"></use>
+                              </svg>
+                            </div>
+                            <button class="btn submit-button submit-button--product text--white js-submit">Заказать</button>
+                          </div>
+                        </div>
+                        <div class="product-main__block product-main__block--salad">
+                          <div class="product-main__header product-main__header--salad"><img class="product-main__prev product-main__prev--salad" src="static/images/content/s-salat5.png" alt="Салат с креветками">
+                            <div class="product-main__data"><span class="product-main__dimension product-main__dimension--small text--white js-size-small size-active" data-price="350">100 гр.</span><span class="product-main__dimension product-main__dimension--big text--white js-size-big" data-price="550">200 гр.</span><span class="product-main__cost text--white js-cost">350 руб.</span></div>
+                          </div>
+                          <div class="product-main__body">
+                            <h3 class="product-main__body__name title--dark title--bold">Салат с креветками</h3>
+                            <p class="product-main__body__composition product-main__body__composition--salad text--dark">Состав: сыр, грибы, чеснок, острый перец, еще длинное наименование.</p>
+                          </div>
+                          <div class="product-main__footer">
+                            <div class="product-main__form js-prod-amount">
+                              <svg class="svg-sprite-icon icon-minus product-main__icon-minus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#minus"></use>
+                              </svg>
+                              <input class="product-main__amount text--dark" type="text" name="amount" value="1" readonly>
+                              <svg class="svg-sprite-icon icon-plus product-main__icon-plus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#plus"></use>
+                              </svg>
+                            </div>
+                            <button class="btn submit-button submit-button--product text--white js-submit">Заказать</button>
+                          </div>
+                        </div>
+                        <div class="product-main__block product-main__block--salad">
+                          <div class="product-main__header product-main__header--salad"><img class="product-main__prev product-main__prev--salad" src="static/images/content/s-salat6.png" alt="Салат Мимоза">
+                            <div class="product-main__data"><span class="product-main__dimension product-main__dimension--small text--white js-size-small size-active" data-price="390">100 гр.</span><span class="product-main__dimension product-main__dimension--big text--white js-size-big" data-price="510">200 гр.</span><span class="product-main__cost text--white js-cost">390 руб.</span></div>
+                          </div>
+                          <div class="product-main__body">
+                            <h3 class="product-main__body__name title--dark title--bold">Салат Мимоза</h3>
+                            <p class="product-main__body__composition product-main__body__composition--salad text--dark">Состав: сыр, грибы, чеснок, острый перец, еще длинное наименование.</p>
+                          </div>
+                          <div class="product-main__footer">
+                            <div class="product-main__form js-prod-amount">
+                              <svg class="svg-sprite-icon icon-minus product-main__icon-minus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#minus"></use>
+                              </svg>
+                              <input class="product-main__amount text--dark" type="text" name="amount" value="1" readonly>
+                              <svg class="svg-sprite-icon icon-plus product-main__icon-plus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#plus"></use>
+                              </svg>
+                            </div>
+                            <button class="btn submit-button submit-button--product text--white js-submit">Заказать</button>
+                          </div>
+                        </div>
+                        <div class="product-main__block product-main__block--salad">
+                          <div class="product-main__header product-main__header--salad"><img class="product-main__prev product-main__prev--salad" src="static/images/content/s-salat7.png" alt="Салат Морской">
+                            <div class="product-main__data"><span class="product-main__dimension product-main__dimension--small text--white js-size-small size-active" data-price="320">100 гр.</span><span class="product-main__dimension product-main__dimension--big text--white js-size-big" data-price="520">200 гр.</span><span class="product-main__cost text--white js-cost">320 руб.</span></div>
+                          </div>
+                          <div class="product-main__body">
+                            <h3 class="product-main__body__name title--dark title--bold">Салат Морской</h3>
+                            <p class="product-main__body__composition product-main__body__composition--salad text--dark">Состав: сыр, грибы, чеснок, острый перец, еще длинное наименование.</p>
+                          </div>
+                          <div class="product-main__footer">
+                            <div class="product-main__form js-prod-amount">
+                              <svg class="svg-sprite-icon icon-minus product-main__icon-minus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#minus"></use>
+                              </svg>
+                              <input class="product-main__amount text--dark" type="text" name="amount" value="1" readonly>
+                              <svg class="svg-sprite-icon icon-plus product-main__icon-plus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#plus"></use>
+                              </svg>
+                            </div>
+                            <button class="btn submit-button submit-button--product text--white js-submit">Заказать</button>
+                          </div>
+                        </div>
+                        <div class="product-main__block product-main__block--salad">
+                          <div class="product-main__header product-main__header--salad"><img class="product-main__prev product-main__prev--salad" src="static/images/content/s-salat8.png" alt="Салат Мясной">
+                            <div class="product-main__data"><span class="product-main__dimension product-main__dimension--small text--white js-size-small size-active" data-price="340">100 гр.</span><span class="product-main__dimension product-main__dimension--big text--white js-size-big" data-price="530">200 гр.</span><span class="product-main__cost text--white js-cost">340 руб.</span></div>
+                          </div>
+                          <div class="product-main__body">
+                            <h3 class="product-main__body__name title--dark title--bold">Салат Мясной</h3>
+                            <p class="product-main__body__composition product-main__body__composition--salad text--dark">Состав: сыр, грибы, чеснок, острый перец, еще длинное наименование.</p>
+                          </div>
+                          <div class="product-main__footer">
+                            <div class="product-main__form js-prod-amount">
+                              <svg class="svg-sprite-icon icon-minus product-main__icon-minus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#minus"></use>
+                              </svg>
+                              <input class="product-main__amount text--dark" type="text" name="amount" value="1" readonly>
+                              <svg class="svg-sprite-icon icon-plus product-main__icon-plus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#plus"></use>
+                              </svg>
+                            </div>
+                            <button class="btn submit-button submit-button--product text--white js-submit">Заказать</button>
+                          </div>
+                        </div>
+                        <div class="product-main__block product-main__block--salad">
+                          <div class="product-main__header product-main__header--salad"><img class="product-main__prev product-main__prev--salad" src="static/images/content/s-salat8.png" alt="Салат Монте-Кристо">
+                            <div class="product-main__data"><span class="product-main__dimension product-main__dimension--small text--white js-size-small size-active" data-price="370">100 гр.</span><span class="product-main__dimension product-main__dimension--big text--white js-size-big" data-price="500">200 гр.</span><span class="product-main__cost text--white js-cost">370 руб.</span></div>
+                          </div>
+                          <div class="product-main__body">
+                            <h3 class="product-main__body__name title--dark title--bold">Салат Монте-Кристо</h3>
+                            <p class="product-main__body__composition product-main__body__composition--salad text--dark">Состав: сыр, грибы, чеснок, острый перец, еще длинное наименование.</p>
+                          </div>
+                          <div class="product-main__footer">
+                            <div class="product-main__form js-prod-amount">
+                              <svg class="svg-sprite-icon icon-minus product-main__icon-minus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#minus"></use>
+                              </svg>
+                              <input class="product-main__amount text--dark" type="text" name="amount" value="1" readonly>
+                              <svg class="svg-sprite-icon icon-plus product-main__icon-plus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#plus"></use>
+                              </svg>
+                            </div>
+                            <button class="btn submit-button submit-button--product text--white js-submit">Заказать</button>
+                          </div>
+                        </div>
+              </div>
+              <div class="salad-main__arrow">
+                <svg class="svg-sprite-icon icon-next salad-main__arrow__next">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#next"></use>
+                </svg>
+                <svg class="svg-sprite-icon icon-prev salad-main__arrow__prev">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#prev"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="product" id="drink">
+          <div class="container container--product">
+            <h2 class="product__title title--dark title--black">Выбрать напиток</h2>
+            <p class="product__text text--dark">Что может быть лучше освежающего напитка в дополнение к горячей и ароматной пицце</p>
+            <div class="product-main">
+              <div class="product-main__slider js-drink-slider js-container">
+                        <div class="product-main__block">
+                          <div class="product-main__header"><img class="product-main__prev product-main__prev--drink" src="static/images/content/nap1.png" alt="Кока-кола">
+                            <div class="product-main__data"><span class="product-main__dimension product-main__dimension--small text--white js-size-small size-active" data-price="320">0,5 л.</span><span class="product-main__dimension product-main__dimension--big text--white js-size-big" data-price="410">1 л.</span><span class="product-main__cost text--white js-cost">320 руб.</span></div>
+                          </div>
+                          <div class="product-main__body">
+                            <h3 class="product-main__body__name title--dark title--bold">Кока-кола</h3>
+                          </div>
+                          <div class="product-main__footer">
+                            <div class="product-main__form js-prod-amount">
+                              <svg class="svg-sprite-icon icon-minus product-main__icon-minus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#minus"></use>
+                              </svg>
+                              <input class="product-main__amount text--dark" type="text" name="amount" value="1" readonly>
+                              <svg class="svg-sprite-icon icon-plus product-main__icon-plus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#plus"></use>
+                              </svg>
+                            </div>
+                            <button class="btn submit-button submit-button--product text--white js-submit">Заказать</button>
+                          </div>
+                        </div>
+                        <div class="product-main__block">
+                          <div class="product-main__header"><img class="product-main__prev product-main__prev--drink" src="static/images/content/nap2.png" alt="Спрайт">
+                            <div class="product-main__data"><span class="product-main__dimension product-main__dimension--small text--white js-size-small size-active" data-price="300">0,5 л.</span><span class="product-main__dimension product-main__dimension--big text--white js-size-big" data-price="390">1 л.</span><span class="product-main__cost text--white js-cost">300 руб.</span></div>
+                          </div>
+                          <div class="product-main__body">
+                            <h3 class="product-main__body__name title--dark title--bold">Спрайт</h3>
+                          </div>
+                          <div class="product-main__footer">
+                            <div class="product-main__form js-prod-amount">
+                              <svg class="svg-sprite-icon icon-minus product-main__icon-minus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#minus"></use>
+                              </svg>
+                              <input class="product-main__amount text--dark" type="text" name="amount" value="1" readonly>
+                              <svg class="svg-sprite-icon icon-plus product-main__icon-plus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#plus"></use>
+                              </svg>
+                            </div>
+                            <button class="btn submit-button submit-button--product text--white js-submit">Заказать</button>
+                          </div>
+                        </div>
+                        <div class="product-main__block">
+                          <div class="product-main__header"><img class="product-main__prev product-main__prev--drink" src="static/images/content/nap3.png" alt="Фанта">
+                            <div class="product-main__data"><span class="product-main__dimension product-main__dimension--small text--white js-size-small size-active" data-price="320">0,5 л.</span><span class="product-main__dimension product-main__dimension--big text--white js-size-big" data-price="420">1 л.</span><span class="product-main__cost text--white js-cost">320 руб.</span></div>
+                          </div>
+                          <div class="product-main__body">
+                            <h3 class="product-main__body__name title--dark title--bold">Фанта</h3>
+                          </div>
+                          <div class="product-main__footer">
+                            <div class="product-main__form js-prod-amount">
+                              <svg class="svg-sprite-icon icon-minus product-main__icon-minus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#minus"></use>
+                              </svg>
+                              <input class="product-main__amount text--dark" type="text" name="amount" value="1" readonly>
+                              <svg class="svg-sprite-icon icon-plus product-main__icon-plus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#plus"></use>
+                              </svg>
+                            </div>
+                            <button class="btn submit-button submit-button--product text--white js-submit">Заказать</button>
+                          </div>
+                        </div>
+                        <div class="product-main__block">
+                          <div class="product-main__header"><img class="product-main__prev product-main__prev--drink" src="static/images/content/nap4.png" alt="Нести">
+                            <div class="product-main__data"><span class="product-main__dimension product-main__dimension--small text--white js-size-small size-active" data-price="310">0,5 л.</span><span class="product-main__dimension product-main__dimension--big text--white js-size-big" data-price="430">1 л.</span><span class="product-main__cost text--white js-cost">310 руб.</span></div>
+                          </div>
+                          <div class="product-main__body">
+                            <h3 class="product-main__body__name title--dark title--bold">Нести</h3>
+                          </div>
+                          <div class="product-main__footer">
+                            <div class="product-main__form js-prod-amount">
+                              <svg class="svg-sprite-icon icon-minus product-main__icon-minus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#minus"></use>
+                              </svg>
+                              <input class="product-main__amount text--dark" type="text" name="amount" value="1" readonly>
+                              <svg class="svg-sprite-icon icon-plus product-main__icon-plus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#plus"></use>
+                              </svg>
+                            </div>
+                            <button class="btn submit-button submit-button--product text--white js-submit">Заказать</button>
+                          </div>
+                        </div>
+                        <div class="product-main__block">
+                          <div class="product-main__header"><img class="product-main__prev product-main__prev--drink" src="static/images/content/nap5.png" alt="Швебс">
+                            <div class="product-main__data"><span class="product-main__dimension product-main__dimension--small text--white js-size-small size-active" data-price="290">0,5 л.</span><span class="product-main__dimension product-main__dimension--big text--white js-size-big" data-price="410">1 л.</span><span class="product-main__cost text--white js-cost">290 руб.</span></div>
+                          </div>
+                          <div class="product-main__body">
+                            <h3 class="product-main__body__name title--dark title--bold">Швебс</h3>
+                          </div>
+                          <div class="product-main__footer">
+                            <div class="product-main__form js-prod-amount">
+                              <svg class="svg-sprite-icon icon-minus product-main__icon-minus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#minus"></use>
+                              </svg>
+                              <input class="product-main__amount text--dark" type="text" name="amount" value="1" readonly>
+                              <svg class="svg-sprite-icon icon-plus product-main__icon-plus">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#plus"></use>
+                              </svg>
+                            </div>
+                            <button class="btn submit-button submit-button--product text--white js-submit">Заказать</button>
+                          </div>
+                        </div>
+              </div>
+              <div class="drink-main__arrow">
+                <svg class="svg-sprite-icon icon-next drink-main__arrow__next">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#next"></use>
+                </svg>
+                <svg class="svg-sprite-icon icon-prev drink-main__arrow__prev">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#prev"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="product">
+          <div class="container container--product container--delivery">
+            <div class="product-block product__delivery revealator-zoomin revealator-once revealator-duration10">
+              <h2 class="product__title title--dark title--black">Оформить доставку</h2>
+              <p class="product__text text--dark">Пожалуйста, выберите удобную дату и время доставки, введите ваш полный адрес и телефон, чтобы мы могли убедиться в том, что ваш заказ нашел вас</p>
+              <form class="product__delivery__form-field" action="javascript:void(0)" name="form">
+                        <div class="product__delivery__form product__delivery__form--small">
+                          <label class="product__text text--dark" for="form1">Ваше имя:</label>
+                          <input class="input product__delivery__input input--required" id="form1" type="text" name="firstname" placeholder="Иван" value="" required>
+                        </div>
+                        <div class="product__delivery__form product__delivery__form--small">
+                          <label class="product__text text--dark" for="form2">Ваша фамилия:</label>
+                          <input class="input product__delivery__input input--required" id="form2" type="text" name="lastname" placeholder="Иванов" value="" required>
+                        </div>
+                        <div class="product__delivery__form product__delivery__form--small">
+                          <label class="product__text text--dark" for="form3">Ваш телефон:</label>
+                          <input class="input product__delivery__input input--required" id="form3" type="tel" name="phone" placeholder="+79812502525" value="" required>
+                        </div>
+                        <div class="product__delivery__form product__delivery__form--small">
+                          <label class="product__text text--dark" for="form4">Дата доставки:</label>
+                          <input class="input product__delivery__input input--required" id="form4" type="number" name="date" placeholder="Дата в формате ГГГГ.ММ.ДД" value="" required>
+                        </div>
+                        <div class="product__delivery__form product__delivery__form--small">
+                          <label class="product__text text--dark" for="form5">Время доставки:</label>
+                          <input class="input product__delivery__input input--required" id="form5" type="number" name="time" placeholder="Время в формате ЧЧ.ММ" value="" required>
+                        </div>
+                        <div class="product__delivery__form product__delivery__form--big">
+                          <label class="product__text text--dark" for="form6">Адрес доставки:</label>
+                          <input class="input product__delivery__input input--required" id="form6" type="text" name="address" placeholder="г. Москва, ул. Петрова, д. 20, кв. 30" value="" required>
+                        </div>
+                <div class="product__delivery__form product__delivery__form--big">
+                  <p class="product__text text--dark">Комментарий к заказу:</p>
+                  <textarea class="input product__delivery__input input--comment" name="text" rows="5"></textarea>
+                </div>
+                <div class="product__delivery__form product__delivery__form--big product__delivery__form--buttons">
+                  <input class="btn submit-button submit-button--delivery text--white" type="submit" value="Заказать">
+                  <input class="product__menu__reset product__menu__reset--delivery text--dark" type="reset" name="reset" value="Сбросить">
+                </div>
+              </form>
+            </div>
+            <div class="product-block product__menu revealator-zoomin revealator-once revealator-duration10">
+              <div class="product__menu__wrapper">
+                <h2 class="product__title title--white title--bold">Ваш заказ</h2>
+                <div class="product__menu__body">
+                  <ul class="product__menu__order" id="cart-menu">
+                    <li class="product__menu__item prod-item"><span class="product__menu__subitem prod-name"></span>
+                      <div class="amount-block">
+                        <svg class="svg-sprite-icon icon-minus icon-cart-minus">
+                          <use xlink:href="static/images/svg/symbol/sprite.svg#minus"></use>
+                        </svg>
+                        <input class="product__menu__subitem prod-amount" type="text" name="amount" value="1" readonly>
+                        <svg class="svg-sprite-icon icon-plus icon-cart-plus">
+                          <use xlink:href="static/images/svg/symbol/sprite.svg#plus"></use>
+                        </svg>
+                      </div><span class="product__menu__subitem prod-price"></span>
+                      <svg class="svg-sprite-icon icon-delete prod-icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#delete"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+                <div class="product__menu__footer">
+                  <div class="product__menu__price"><span class="product__menu__total product__menu__total--text text--white">Итого:</span><span class="product__menu__total product__menu__total--number text--white js-total-price">0</span><span class="product__menu__total product__menu__total--money text--white">руб.</span>
+                    <input class="product__menu__reset product__menu__reset--menu" type="reset" name="delete" value="Удалить все">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="footer__container container">
+          <div class="footer-info">
+            <h2 class="footer-info__title title--white title--bold">Пицца на дом</h2>
+            <p class="footer-info text--white"></p>
+            <div class="footer-info__group">
+              <svg class="svg-sprite-icon icon-email footer-info__icon">
+                <use xlink:href="static/images/svg/symbol/sprite.svg#email"></use>
+              </svg><a class="footer-info__text text--white" href="mailto:pizzanadom@yandex.ru">pizzanadom@yandex.ru</a>
+            </div>
+            <div class="footer-info__group">
+              <svg class="svg-sprite-icon icon-phone-footer footer-info__icon">
+                <use xlink:href="static/images/svg/symbol/sprite.svg#phone-footer"></use>
+              </svg><a class="footer-info__text text--white" href="tel:+79998881020">+7 (999) 888 10 20</a>
+            </div>
+            <div class="footer-info__group">
+              <svg class="svg-sprite-icon icon-locat footer-info__icon">
+                <use xlink:href="static/images/svg/symbol/sprite.svg#locat"></use>
+              </svg>
+              <p class="footer-info__text text--white">Москва, Коломенское ш., дом 46а, оф. 345</p>
+            </div>
+          </div>
+          <div class="footer-info">
+            <h2 class="footer-info__title title--white title--bold">Заказать</h2>
+            <nav class="footer-info__nav">
+              <ul class="footer-info__nav__list">
+                <li class="footer-info__nav__item"><a class="footer-info__nav__link js-anchor" href="#start">Начало</a></li>
+                <li class="footer-info__nav__item"><a class="footer-info__nav__link js-anchor" href="#pizza">Заказать пиццу</a></li>
+                <li class="footer-info__nav__item"><a class="footer-info__nav__link js-anchor" href="#salad">Заказать закуски</a></li>
+                <li class="footer-info__nav__item"><a class="footer-info__nav__link js-anchor" href="#drink">Заказать напитки</a></li>
+              </ul>
+            </nav>
+            <input class="btn submit-button submit-button--header text--white" type="submit" value="Сделать заказ">
+          </div>
+          <div class="footer-info">
+            <h2 class="footer-info__title title--white title--bold">Галерея Instagram</h2>
+            <div class="footer-info__gallery js-gallery"><a href="static/images/content/pizza1.png"><img class="footer-info__img" src="static/images/content/s-pizza1.png" alt="Фото продукта"></a><a href="static/images/content/pizza2.png"><img class="footer-info__img" src="static/images/content/s-pizza2.png" alt="Фото продукта"></a><a href="static/images/content/pizza3.png"><img class="footer-info__img" src="static/images/content/s-pizza3.png" alt="Фото продукта"></a><a href="static/images/content/pizza4.png"><img class="footer-info__img" src="static/images/content/s-pizza4.png" alt="Фото продукта"></a><a href="static/images/content/pizza5.png"><img class="footer-info__img" src="static/images/content/s-pizza5.png" alt="Фото продукта"></a><a href="static/images/content/pizza6.png"><img class="footer-info__img" src="static/images/content/s-pizza6.png" alt="Фото продукта"></a><a href="static/images/content/salat1.png"><img class="footer-info__img" src="static/images/content/s-salat1.png" alt="Фото продукта"></a><a href="static/images/content/salat2.png"><img class="footer-info__img" src="static/images/content/s-salat2.png" alt="Фото продукта"></a><a href="static/images/content/salat3.png"><img class="footer-info__img" src="static/images/content/s-salat3.png" alt="Фото продукта"></a><a href="static/images/content/salat4.png"><img class="footer-info__img" src="static/images/content/s-salat4.png" alt="Фото продукта"></a><a href="static/images/content/salat5.png"><img class="footer-info__img" src="static/images/content/s-salat5.png" alt="Фото продукта"></a><a href="static/images/content/salat6.png"><img class="footer-info__img" src="static/images/content/s-salat6.png" alt="Фото продукта"></a><a href="static/images/content/pizza5.png"><img class="footer-info__img" src="static/images/content/s-pizza5.png" alt="Фото продукта"></a><a href="static/images/content/pizza6.png"><img class="footer-info__img" src="static/images/content/s-pizza6.png" alt="Фото продукта"></a><a href="static/images/content/salat1.png"><img class="footer-info__img" src="static/images/content/s-salat1.png" alt="Фото продукта"></a><a href="static/images/content/salat2.png"><img class="footer-info__img" src="static/images/content/s-salat2.png" alt="Фото продукта"></a></div>
+          </div>
+          <div class="footer-info">
+            <h2 class="footer-info__title title--white title--bold">Мы в соцсетях</h2>
+            <div class="footer-info__wrap">
+              <div class="footer-info__group"><a class="footer-info__text footer-info__text--social text--white" href="https://vk.com">Мы в Вконтакте
+                  <svg class="svg-sprite-icon icon-vk footer-info__social-icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#vk"></use>
+                  </svg></a></div>
+              <div class="footer-info__group"><a class="footer-info__text footer-info__text--social text--white" href="https://facebook.com">Мы в Фейсбуке
+                  <svg class="svg-sprite-icon icon-fb footer-info__social-icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#fb"></use>
+                  </svg></a></div>
+              <div class="footer-info__group"><a class="footer-info__text footer-info__text--social text--white" href="https://linkedin.com">Мы в Линкедин
+                  <svg class="svg-sprite-icon icon-liin footer-info__social-icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#liin"></use>
+                  </svg></a></div>
+              <div class="footer-info__group"><a class="footer-info__text footer-info__text--social text--white" href="https://instagram.com">Мы в Инстаграме
+                  <svg class="svg-sprite-icon icon-inst footer-info__social-icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#inst"></use>
+                  </svg></a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>

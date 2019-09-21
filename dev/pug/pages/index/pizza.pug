@@ -1,0 +1,98 @@
+mixin pizza-block(src, alt, smallDimension, bigdimension, costSmall, costBig, cost, name, composition)
+	.product-main__block
+		.product-main__header
+			img.product-main__prev(src=src, alt=alt)
+			.product-main__data
+				span.product-main__dimension.product-main__dimension--small.text--white.js-size-small.size-active(data-price=costSmall)=smallDimension
+				span.product-main__dimension.product-main__dimension--big.text--white.js-size-big(data-price=costBig)=bigdimension
+				span.product-main__cost.text--white.js-cost=cost
+		.product-main__body
+			h3.product-main__body__name.title--dark.title--bold=name
+			p.product-main__body__composition.text--dark=composition
+		.product-main__footer
+			.product-main__form.js-prod-amount
+				+icon("minus", "product-main__icon-minus")
+				input.product-main__amount.text--dark(type="text" name="amount" value="1" readonly)
+				+icon("plus", "product-main__icon-plus")
+			button.btn.submit-button.submit-button--product.js-submit.text--white Заказать
+
+mixin pizza-check(checkData, checkId, checkVal, nameLabel, costLabel)
+	li.block-left__checkbox(data-cost=checkData)
+		.checkbox
+			input.block-left__input(id=checkId type="checkbox" value=checkVal name="filling")
+			span.checkbox__custom
+			label.product__text.label--name.text--dark(for=checkId)=nameLabel
+			label.product__text.label--price.text--dark(for=checkId)=costLabel
+
+
+section.product#pizza
+	.container.container--product
+
+		h2.product__title.title--dark.title--black Выбрать пиццу
+		p.product__text.text--dark Собрать пиццу самому, воспользовавшись специальным конструктором или воспользоваться коллекцией ниже
+
+		.product-main
+			.product-main__choice
+				h3.product__title.product__title--choice.js-btn.product__title--active.title--dark.title--bold Выбрать готовое решение
+				h3.product__title.product__title--choice.js-btn.js-hide.title--dark.title--bold Открыть конструктор
+
+			.product-main__slider.js-pizza-slider.js-container.js-block
+				+pizza-block("static/images/content/s-pizza1.png", "Пицца Неаполитана", "26 см.", "38 см.", "1000", "1200", "1000 руб.", "Пицца Неаполитана", "Состав: Фирменный томатный соус, моцарелла, балык, шампиньоны свежие, бекон,салями итальянская, маслины, тимьян сушеный.")
+				+pizza-block("static/images/content/s-pizza2.png", "Пицца Тропикана", "26 см.", "38 см.", "1100", "1300", "1100 руб.", "Пицца Тропикана", "Состав: Фирменный томатный соус, моцарелла, балык, шампиньоны свежие, бекон,салями итальянская, маслины, тимьян сушеный.")
+				+pizza-block("static/images/content/s-pizza3.png", "Пицца Пепперони", "26 см.", "38 см.", "1300", "1400", "1300 руб.", "Пицца Пепперони", "Состав: Фирменный томатный соус, моцарелла, балык, шампиньоны свежие, бекон,салями итальянская, маслины, тимьян сушеный.")
+				+pizza-block("static/images/content/s-pizza4.png", "Пицца Тропикана", "26 см.", "38 см.", "1100", "1500", "1100 руб.", "Пицца Тропикана", "Состав: Фирменный томатный соус, моцарелла, балык, шампиньоны свежие, бекон,салями итальянская, маслины, тимьян сушеный.")
+				+pizza-block("static/images/content/s-pizza5.png", "Пицца Пепперони", "26 см.", "38 см.", "1000", "1200", "1000 руб.", "Пицца Пепперони", "Состав: Фирменный томатный соус, моцарелла, балык, шампиньоны свежие, бекон,салями итальянская, маслины, тимьян сушеный.")
+				+pizza-block("static/images/content/s-pizza6.png", "Пицца Неаполитана", "26 см.", "38 см.", "1000", "1200", "1000 руб.", "Пицца Неаполитана", "Состав: Фирменный томатный соус, моцарелла, балык, шампиньоны свежие, бекон,салями итальянская, маслины, тимьян сушеный.")
+				+pizza-block("static/images/content/s-pizza7.png", "Пицца Пепперони", "26 см.", "38 см.", "1000", "1200", "1000 руб.", "Пицца Пепперони", "Состав: Фирменный томатный соус, моцарелла, балык, шампиньоны свежие, бекон,салями итальянская, маслины, тимьян сушеный.")
+
+			.product-main__constructor.js-container.js-block.js-toggle
+				.block-left
+					.block-left__group.block-left__group--size
+						h2.product__title.title--dark.title--bold Выберите размер и количество
+						.block-left__size-wrapper
+							.product-main__data.product-main__data--constr
+								span.product-main__dimension.product-main__dimension--small.text--white.size-active 26 см.
+								span.product-main__dimension.product-main__dimension--big.text--white 38 см.
+								span.product-main__cost.text--white 1200 руб.
+							.product-main__form.product-main__form--constr
+								+icon("minus", "product-main__icon-constr")
+								input.product-main__amount.text--dark(type="text" name="amount" value="1" readonly)
+								+icon("plus", "product-main__icon-constr")
+
+					.block-left__group.block-left__group--filling
+						h2.product__title.title--dark.title--bold Основное наполнение
+						p.product-main__constructor__desc.text--dark Основа из теста, соус на основе томатов, сыр моцарелла
+
+					.block-left__group.block-left__group--filling.product-main__constructor__filling--optional
+						h2.product__title.title--dark.title--bold Дополнительное наполнение
+						ul.block-left__check-wrapper
+							+pizza-check('72', 'check1', 'dorBlueCheese', 'Сыр "Дор Блю"', '72 руб.')
+							+pizza-check('60', 'check2', 'cheeseRadomer', 'Сыр "Радомер"', '60 руб.')
+							+pizza-check('53', 'check3', 'cheeseGouda', 'Сыр "Гауда"', '53 руб.')
+							+pizza-check('50', 'check4', 'mozzarellacheese', 'Сыр "Моцарелла"', '50 руб.')
+							+pizza-check('52', 'check5', 'cheesFeta', 'Сыр "Фета"', '52 руб.')
+							+pizza-check('70', 'check6', 'cheeseParmesan', 'Сыр "Пармезан"', '70 руб.')
+							+pizza-check('50', 'check7', 'chickenfillet', 'Куриное филе', '50 руб.')
+							+pizza-check('53', 'check8', 'balikMeat', 'Балык мясной', '53 руб.')
+							+pizza-check('60', 'check9', 'bacon', 'Бекон', '60 руб.')
+							+pizza-check('60', 'check10', 'huntingSausages', 'Охотничьи колбаски', '60 руб.')
+							+pizza-check('20', 'check11', 'tomato', 'Помидор', '20 руб.')
+							+pizza-check('30', 'check12', 'olives', 'Маслины', '30 руб.')
+							+pizza-check('30', 'check13', 'freshChampignons', 'Шампиньоны свежие', '30 руб.')
+							+pizza-check('10', 'check14', 'parsley', 'Петрушка', '10 руб.')
+							+pizza-check('20', 'check15', 'chilliPeppers', 'Перец чилли', '20 руб.')
+							+pizza-check('20', 'check16', 'pepperoniPepper', 'Перец пепперони', '20 руб.')
+							+pizza-check('50', 'check17', 'italianSalami', 'Салями итальянская', '50 руб.')
+							+pizza-check('30', 'check18', 'pineapple', 'Ананас', '30 руб.')
+
+					.block-left__group.block-left__group--prev
+						.product__delivery__form.product__delivery__form--big.product__delivery__form--buttons
+							button.btn.submit-button.submit-button--constr.submit-button--product.text--white Заказать
+							input.product__menu__reset.product__menu__reset--delivery.text--dark(type="reset" name="reset" value="Сбросить")
+
+				.block-right
+					img.product-main__prev.product-main__prev--constr(src="static/images/content/pizza1.png", alt="Фото пиццы")
+
+			.pizza-main__arrow
+				+icon("next", "pizza-main__arrow__next")
+				+icon("prev", "pizza-main__arrow__prev")

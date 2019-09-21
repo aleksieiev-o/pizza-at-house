@@ -1,0 +1,36 @@
+mixin drink-block(src, alt, smallDimension, bigdimension, costSmall, costBig, cost, name)
+	.product-main__block
+		.product-main__header
+			img.product-main__prev.product-main__prev--drink(src=src, alt=alt)
+			.product-main__data
+				span.product-main__dimension.product-main__dimension--small.text--white.js-size-small.size-active(data-price=costSmall)=smallDimension
+				span.product-main__dimension.product-main__dimension--big.text--white.js-size-big(data-price=costBig)=bigdimension
+				span.product-main__cost.text--white.js-cost=cost
+		.product-main__body
+			h3.product-main__body__name.title--dark.title--bold=name
+		.product-main__footer
+			.product-main__form.js-prod-amount
+				+icon("minus", "product-main__icon-minus")
+				input.product-main__amount.text--dark(type="text" name="amount" value="1" readonly)
+				+icon("plus", "product-main__icon-plus")
+			button.btn.submit-button.submit-button--product.text--white.js-submit Заказать
+
+
+section.product#drink
+	.container.container--product
+
+		h2.product__title.title--dark.title--black Выбрать напиток
+		p.product__text.text--dark Что может быть лучше освежающего напитка в дополнение к горячей и ароматной пицце
+
+		.product-main
+			.product-main__slider.js-drink-slider.js-container
+
+				+drink-block("static/images/content/nap1.png", "Кока-кола", "0,5 л.", "1 л.", "320", "410", "320 руб.", "Кока-кола")
+				+drink-block("static/images/content/nap2.png", "Спрайт", "0,5 л.", "1 л.", "300", "390", "300 руб.", "Спрайт")
+				+drink-block("static/images/content/nap3.png", "Фанта", "0,5 л.", "1 л.", "320", "420", "320 руб.", "Фанта")
+				+drink-block("static/images/content/nap4.png", "Нести", "0,5 л.", "1 л.", "310", "430", "310 руб.", "Нести")
+				+drink-block("static/images/content/nap5.png", "Швебс", "0,5 л.", "1 л.", "290", "410", "290 руб.", "Швебс")
+
+			.drink-main__arrow
+				+icon("next", "drink-main__arrow__next")
+				+icon("prev", "drink-main__arrow__prev")

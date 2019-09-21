@@ -1,0 +1,23 @@
+.salad-main__arrow-prev, .salad-main__arrow-next {
+	@include size(50px);
+	cursor: pointer;
+	fill: rgba( $button, .5);
+	position: absolute;
+	transition: all linear .3s;
+	top: 50%;
+	transform: translateY(50%);
+	&:hover {
+		fill: $action-color;
+	}
+	@media screen and(max-width: $tablet-wide) {
+		display: none;
+	}
+}
+
+.salad-main__arrow-prev {
+	right: 0;
+}
+
+.salad-main__arrow-next {
+	left: 0;
+}

@@ -1,0 +1,126 @@
+.pizza-main__arrow {
+	align-items: center;
+	display: flex;
+	height: 45px;
+	justify-content: space-between;
+	margin-top: 10px;
+	width: 100%;
+
+	&__next, &__prev {
+		@include size(45px);
+		cursor: pointer;
+		fill: rgba($button, .5);
+		transition: all linear .3s;
+		&:hover {
+			fill: $action-color;
+		}
+		@media screen and(max-width: $tablet-small) {
+			display: none !important;
+		}
+	}
+}
+
+.salad-main__arrow {
+	align-items: center;
+	display: flex;
+	height: 45px;
+	justify-content: space-between;
+	margin-top: 10px;
+	width: 100%;
+
+	&__next, &__prev {
+		@include size(45px);
+		cursor: pointer;
+		fill: rgba($white, .7);
+		transition: all linear .3s;
+		&:hover {
+			fill: $action-color;
+		}
+		@media screen and(max-width: $tablet-small) {
+			display: none !important;
+		}
+	}
+}
+
+.drink-main__arrow {
+	align-items: center;
+	display: flex;
+	height: 45px;
+	justify-content: space-between;
+	margin-top: 10px;
+	width: 100%;
+
+	&__next, &__prev {
+		@include size(45px);
+		cursor: pointer;
+		fill: rgba($button, .7);
+		transition: all linear .3s;
+		&:hover {
+			fill: $action-color;
+		}
+		@media screen and(max-width: $tablet-small) {
+			display: none !important;
+		}
+	}
+}
+
+.slick-dots {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	height: fit-content;
+	position: absolute;
+	bottom: -40px;
+	right: 50%;
+	transform: translateX(50%);
+	& > * {
+		&:not(:last-child) { margin-right: 10px; }
+	}
+	button {
+		@include size(15px);
+		border-radius: 50%;
+		border: 0;
+		background-color: rgba($button, .5);
+		cursor: pointer;
+		display: block;
+		padding: 0;
+		text-indent: -9999px;
+		transition: all linear .3s;
+	}
+	.slick-active {
+		button {
+			background-color: $action-color;
+		}
+	}
+}
+
+.input {
+	border: 1px solid rgba($button, .5);
+	background-color: transparent;
+	border-radius: 5px;
+	padding: 5px;
+	transition:  all linear .3s;
+	&:focus {
+		border: 1px solid $action-color;
+	}
+
+	&--required {
+		height: 40px;
+	}
+
+	&--comment {
+		outline: none;
+	}
+}
+
+.icon-cart-minus, .icon-cart-plus {
+	@include size (20px);
+	cursor: pointer;
+	fill: rgba($white, .5);
+	transition: all linear .3s;
+	@media screen and(min-width: 1023.98px) {
+		&:hover {
+			fill: rgba($white, 1);
+		}
+	}
+}

@@ -1,0 +1,40 @@
+mixin salad-block(src, alt, smallDimension, bigdimension, costSmall, costBig, cost, name, composition)
+	.product-main__block.product-main__block--salad
+		.product-main__header.product-main__header--salad
+			img.product-main__prev.product-main__prev--salad(src=src, alt=alt)
+			.product-main__data
+				span.product-main__dimension.product-main__dimension--small.text--white.js-size-small.size-active(data-price=costSmall)=smallDimension
+				span.product-main__dimension.product-main__dimension--big.text--white.js-size-big(data-price=costBig)=bigdimension
+				span.product-main__cost.text--white.js-cost=cost
+		.product-main__body
+			h3.product-main__body__name.title--dark.title--bold=name
+			p.product-main__body__composition.product-main__body__composition--salad.text--dark=composition
+		.product-main__footer
+			.product-main__form.js-prod-amount
+				+icon("minus", "product-main__icon-minus")
+				input.product-main__amount.text--dark(type="text" name="amount" value="1" readonly)
+				+icon("plus", "product-main__icon-plus")
+			button.btn.submit-button.submit-button--product.text--white.js-submit Заказать
+
+
+section.product.product--img#salad(style="background-image:url('static/images/general/bg3.jpg')")
+	.container.container--product.container--salad
+
+		h2.product__title.title--white.title--black Выбрать закуски
+		p.product__text.product__text--salad.text--white Не забудьте выбрать свежие закуски и салаты от нашего шеф-повара, которые гармонично дополнят ваше меню сегодня
+
+		.product-main
+			.product-main__slider.js-salad-slider.js-container
+				+salad-block("static/images/content/s-salat1.png", "Салат Греческий", "100 гр.", "200 гр.", "330", "530", "330 руб.", "Салат Греческий", "Состав: сыр, грибы, чеснок, острый перец, еще длинное наименование.")
+				+salad-block("static/images/content/s-salat2.png", "Салат Оливье", "100 гр.", "200 гр.", "310", "520", "310 руб.", "Салат Оливье", "Состав: сыр, грибы, чеснок, острый перец, еще длинное наименование.")
+				+salad-block("static/images/content/s-salat3.png", "Салат Овощной", "100 гр.", "200 гр.", "300", "540", "300 руб.", "Салат Овощной", "Состав: сыр, грибы, чеснок, острый перец, еще длинное наименование.")
+				+salad-block("static/images/content/s-salat4.png", "Салат Крабовый", "100 гр.", "200 гр.", "350", "510", "350 руб.", "Салат Крабовый", "Состав: сыр, грибы, чеснок, острый перец, еще длинное наименование.")
+				+salad-block("static/images/content/s-salat5.png", "Салат с креветками", "100 гр.", "200 гр.", "350", "550", "350 руб.", "Салат с креветками", "Состав: сыр, грибы, чеснок, острый перец, еще длинное наименование.")
+				+salad-block("static/images/content/s-salat6.png", "Салат Мимоза", "100 гр.", "200 гр.", "390", "510", "390 руб.", "Салат Мимоза", "Состав: сыр, грибы, чеснок, острый перец, еще длинное наименование.")
+				+salad-block("static/images/content/s-salat7.png", "Салат Морской", "100 гр.", "200 гр.", "320", "520", "320 руб.", "Салат Морской", "Состав: сыр, грибы, чеснок, острый перец, еще длинное наименование.")
+				+salad-block("static/images/content/s-salat8.png", "Салат Мясной", "100 гр.", "200 гр.", "340", "530", "340 руб.", "Салат Мясной", "Состав: сыр, грибы, чеснок, острый перец, еще длинное наименование.")
+				+salad-block("static/images/content/s-salat8.png", "Салат Монте-Кристо", "100 гр.", "200 гр.", "370", "500", "370 руб.", "Салат Монте-Кристо", "Состав: сыр, грибы, чеснок, острый перец, еще длинное наименование.")
+
+			.salad-main__arrow
+				+icon("next", "salad-main__arrow__next")
+				+icon("prev", "salad-main__arrow__prev")

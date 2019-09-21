@@ -1,0 +1,13 @@
+extends template/main
+
+block variables
+	- var title = 'Пицца на дом'
+	- var pageClass = 'index-page'
+
+block content
+	//- include pages/index/name_file
+	include pages/index/pizza
+	include pages/index/salad
+	include pages/index/drink
+	include pages/index/delivery
+	//- block script

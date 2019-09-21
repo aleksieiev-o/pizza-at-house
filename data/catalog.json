@@ -1,0 +1,170 @@
+[
+		{
+			"id": "p1",
+			"name": "Пицца Неаполитана",
+			"sizeSmall": "26",
+			"sizeBig": "38",
+			"priceSmall": "1000",
+			"priceBig": "1200"
+		},
+		{
+			"id": "p2",
+			"name": "Пицца Тропикана",
+			"sizeSmall": "26",
+			"sizeBig": "38",
+			"priceSmall": "1100",
+			"priceBig": "1300"
+		},
+		{
+			"id": "p3",
+			"name": "Пицца Пепперони",
+			"sizeSmall": "26",
+			"sizeBig": "38",
+			"priceSmall": "1300",
+			"priceBig": "1400"
+		},
+		{
+			"id": "p4",
+			"name": "Пицца Тропикана",
+			"sizeSmall": "26",
+			"sizeBig": "38",
+			"priceSmall": "1100",
+			"priceBig": "1500"
+		},
+		{
+			"id": "p5",
+			"name": "Пицца Пепперони",
+			"sizeSmall": "26",
+			"sizeBig": "38",
+			"priceSmall": "1000",
+			"priceBig": "1200"
+		},
+		{
+			"id": "p6",
+			"name": "Пицца Неаполитана",
+			"sizeSmall": "26",
+			"sizeBig": "38",
+			"priceSmall": "1100",
+			"priceBig": "1200"
+		},
+		{
+			"id": "p7",
+			"name": "Пицца Пепперони",
+			"sizeSmall": "26",
+			"sizeBig": "38",
+			"priceSmall": "1000",
+			"priceBig": "1200"
+		},
+		{
+			"id": "s1",
+			"name": "Салат Греческий",
+			"sizeSmall": "100",
+			"sizeBig": "200",
+			"priceSmall": "330",
+			"priceBig": "530"
+		},
+		{
+			"id": "s2",
+			"name": "Салат Оливье",
+			"sizeSmall": "100",
+			"sizeBig": "200",
+			"priceSmall": "310",
+			"priceBig": "520"
+		},
+		{
+			"id": "s3",
+			"name": "Салат ОлиОвощнойвье",
+			"sizeSmall": "100",
+			"sizeBig": "200",
+			"priceSmall": "300",
+			"priceBig": "540"
+		},
+		{
+			"id": "s4",
+			"name": "Салат Крабовый",
+			"sizeSmall": "100",
+			"sizeBig": "200",
+			"priceSmall": "350",
+			"priceBig": "510"
+		},
+		{
+			"id": "s5",
+			"name": "Салат с креветками",
+			"sizeSmall": "100",
+			"sizeBig": "200",
+			"priceSmall": "350",
+			"priceBig": "550"
+		},
+		{
+			"id": "s6",
+			"name": "Салат Мимоза",
+			"sizeSmall": "100",
+			"sizeBig": "200",
+			"priceSmall": "390",
+			"priceBig": "510"
+		},
+		{
+			"id": "s7",
+			"name": "Салат Морской",
+			"sizeSmall": "100",
+			"sizeBig": "200",
+			"priceSmall": "320",
+			"priceBig": "520"
+		},
+		{
+			"id": "s8",
+			"name": "Салат Мясной",
+			"sizeSmall": "100",
+			"sizeBig": "200",
+			"priceSmall": "340",
+			"priceBig": "530"
+		},
+		{
+			"id": "s9",
+			"name": "Салат Монте-Кристо",
+			"sizeSmall": "100",
+			"sizeBig": "200",
+			"priceSmall": "370",
+			"priceBig": "500"
+		},
+		{
+			"id": "d1",
+			"name": "Кока-кола",
+			"sizeSmall": "0.5",
+			"sizeBig": "1",
+			"priceSmall": "320",
+			"priceBig": "410"
+		},
+		{
+			"id": "d2",
+			"name": "Спрайт",
+			"sizeSmall": "0.5",
+			"sizeBig": "1",
+			"priceSmall": "300",
+			"priceBig": "390"
+		},
+		{
+			"id": "d3",
+			"name": "Фанта",
+			"sizeSmall": "0.5",
+			"sizeBig": "1",
+			"priceSmall": "320",
+			"priceBig": "420"
+		},
+		{
+			"id": "d4",
+			"name": "Нести",
+			"sizeSmall": "0.5",
+			"sizeBig": "1",
+			"priceSmall": "310",
+			"priceBig": "430"
+		},
+		{
+			"id": "d5",
+			"name": "Швебс",
+			"sizeSmall": "0.5",
+			"sizeBig": "1",
+			"priceSmall": "290",
+			"priceBig": "410"
+		}
+]

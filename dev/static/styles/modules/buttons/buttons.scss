@@ -1,0 +1,95 @@
+.btn {
+	align-items: center;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	transition: all linear .3s;
+}
+
+.submit-button {
+	background-color: $button;
+	border: none;
+	border-radius: 5px;
+	font-family: $bold-font;
+	height: 45px;
+	@media screen and(min-width: 1023.98px) {
+		&:hover {
+			background-color: $action-color;
+		}
+	}
+	&--header {
+		width: 220px;
+		margin: 0 auto;
+	}
+	&--product {
+		width: 100%;
+	}
+	&--constr {
+		width: 220px !important;
+	}
+	&--delivery {
+		width: 220px;
+	}
+}
+
+.next-screen-button {
+	@media screen and(min-width: 1025px) {
+		@include size(40px);
+		background-color: rgba($button, .7);
+		border-radius: 50%;
+		bottom: 0;
+		cursor: pointer;
+		fill: $white;
+		right: 1rem;
+		padding: 10px;
+		position: fixed;
+		z-index: 10;
+		@media screen and(min-width: 1023.98px) {
+			&:hover {
+				background-color: $action-color;
+			}
+		}
+	}
+}
+
+.hamburger {
+	display: none;
+	@media screen and(max-width: $desktop-small) {
+		display: block;
+		padding: 10px 0 10px 0;
+		&:hover {
+			opacity: 1;
+		}
+		&-box {
+			width: 45px;
+		}
+		&-inner {
+			background-color: $white;
+			width: 45px;
+			&::before{
+				background-color: $white;
+				width: 45px;
+			}
+			&::after {
+				background-color: $white;
+				width: 45px;
+			}
+		}
+	}
+	&.is-active {
+		&:hover {
+			@if $hamburger-hover-use-filter == true {
+				filter: $hamburger-active-hover-filter;
+			}
+			@else {
+				opacity: 1;
+			}
+		}
+		.hamburger-inner,
+		.hamburger-inner::before,
+		.hamburger-inner::after {
+			background-color: $action-color;
+		}
+	}
+}

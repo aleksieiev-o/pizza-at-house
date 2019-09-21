@@ -1,0 +1,50 @@
+mixin delivery-forms(labelId, labelName, inpId, inpType, inpName, inpPlaceh, formBig)
+	if(formBig)
+		.product__delivery__form.product__delivery__form--big
+			label(for=labelId).product__text.text--dark=labelName
+			input.input.product__delivery__input.input--required(id=inpId type=inpType name=inpName placeholder=inpPlaceh value="" required)
+	else
+		.product__delivery__form.product__delivery__form--small
+			label(for=labelId).product__text.text--dark=labelName
+			input.input.product__delivery__input.input--required(id=inpId type=inpType name=inpName placeholder=inpPlaceh value="" required)
+
+section.product
+	.container.container--product.container--delivery
+
+		.product-block.product__delivery.revealator-zoomin.revealator-once.revealator-duration10
+			h2.product__title.title--dark.title--black Оформить доставку
+			p.product__text.text--dark Пожалуйста, выберите удобную дату и время доставки, введите ваш полный адрес и телефон, чтобы мы могли убедиться в том, что ваш заказ нашел вас
+			form.product__delivery__form-field(action="javascript:void(0)" name="form")
+				+delivery-forms("form1", "Ваше имя:", "form1", "text", "firstname", "Иван")
+				+delivery-forms("form2", "Ваша фамилия:", "form2", "text", "lastname", "Иванов")
+				+delivery-forms("form3", "Ваш телефон:", "form3", "tel", "phone", "+79812502525")
+				+delivery-forms("form4", "Дата доставки:", "form4", "number", "date", "Дата в формате ГГГГ.ММ.ДД")
+				+delivery-forms("form5", "Время доставки:", "form5", "number", "time", "Время в формате ЧЧ.ММ")
+				+delivery-forms("form6", "Адрес доставки:", "form6", "text", "address", "г. Москва, ул. Петрова, д. 20, кв. 30", true)
+
+				.product__delivery__form.product__delivery__form--big
+					p.product__text.text--dark Комментарий к заказу:
+					textarea.input.product__delivery__input.input--comment(name="text" rows="5")
+				.product__delivery__form.product__delivery__form--big.product__delivery__form--buttons
+					input.btn.submit-button.submit-button--delivery.text--white(type="submit" value="Заказать")
+					input.product__menu__reset.product__menu__reset--delivery.text--dark(type="reset" name="reset" value="Сбросить")
+
+		.product-block.product__menu.revealator-zoomin.revealator-once.revealator-duration10
+			.product__menu__wrapper
+				h2.product__title.title--white.title--bold Ваш заказ
+				.product__menu__body
+					ul.product__menu__order#cart-menu
+						li.product__menu__item.prod-item
+							span.product__menu__subitem.prod-name
+							.amount-block
+								+icon("minus", "icon-cart-minus")
+								input.product__menu__subitem.prod-amount(type="text" name="amount" value="1" readonly)
+								+icon("plus", "icon-cart-plus")
+							span.product__menu__subitem.prod-price
+							+icon("delete", "prod-icon")
+				.product__menu__footer
+					.product__menu__price
+						span.product__menu__total.product__menu__total--text.text--white Итого:
+						span.product__menu__total.product__menu__total--number.text--white.js-total-price 0
+						span.product__menu__total.product__menu__total--money.text--white руб.
+						input.product__menu__reset.product__menu__reset--menu(type="reset" name="delete" value="Удалить все")

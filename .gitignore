@@ -1,0 +1,10 @@
+node_modules
+.idea
+build
+.csscomb.json
+yarn-error.log
+psd
+
+*.stackdump
+*.sh
+revealator

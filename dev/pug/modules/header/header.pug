@@ -1,0 +1,64 @@
+header.header.text--white#start
+
+	.header-top
+		.container
+			img.header-top__logo(src="static/images/general/logo.png", alt="Пицца на дом")
+			nav.header-top__nav
+				ul.header-top__list
+					li.header-top__item
+						a.header-top__link.js-anchor.js-anchor--top(href="#start") Начало
+					li.header-top__item
+						a.header-top__link.js-anchor.js-anchor--top(href="#pizza") Заказать пиццу
+					li.header-top__item
+						a.header-top__link.js-anchor.js-anchor--top(href="#salad") Заказать закуски
+					li.header-top__item
+						a.header-top__link.js-anchor.js-anchor--top(href="#drink") Заказать напитки
+			button.hamburger.hamburger--vortex(type="button")
+				span.hamburger-box
+					span.hamburger-inner
+			.header-top__callback
+				.header-top__telephone
+					+icon("phone_top", "header-top__phone-icon")
+					a.phone.header-top__phone-number(href="tel:+79998881020") +7 (999) 888 10 20
+				a.header-top__order(href="#") Заказать бесплатный звонок
+
+			nav.header-top__nav.header-top__nav-mobile.js-nav
+				ul.header-top__list
+					li.header-top__item
+						a.header-top__link.js-anchor.js-anchor--top(href="#start") Начало
+					li.header-top__item
+						a.header-top__link.js-anchor.js-anchor--top(href="#pizza") Заказать пиццу
+					li.header-top__item
+						a.header-top__link.js-anchor.js-anchor--top(href="#salad") Заказать закуски
+					li.header-top__item
+						a.header-top__link.js-anchor.js-anchor--top(href="#drink") Заказать напитки
+				.header-top__callback.header-top__callback--mobile
+					.header-top__callback__telephone
+						+icon("phone_top", "header-top__phone-icon")
+						a.phone.header-top__phone-number(href="tel:+79998881020") +7 (999) 888 10 20
+					a.header-top__order(href="#") Заказать бесплатный звонок
+
+	.header-main.js-header-slider
+		.header-main__img(style="background-image:url('static/images/general/bg1_1.jpg')")
+			.container.container--header-main
+				.header-main__label
+					h1.header-main__title Интересное название про пиццу
+					p.header-main__subtitle Великолепная, пикантная, горячая итальянская пицца с аппетитным французским сыром
+					input.btn.submit-button.submit-button--header.text--white(type="submit" value="Сделать заказ")
+				img.header-main__photo(src="static/images/general/bg1_pizza.png", alt="Фото пиццы")
+		.header-main__img(style="background-image:url('static/images/general/bg1_2.jpg')")
+			.container.container--header-main
+				.header-main__label
+					h1.header-main__title Интересное название про салат
+					p.header-main__subtitle Великолепный, пикантный итальянский салат с аппетитным французским сыром
+					input.btn.submit-button.submit-button--header.text--white(type="submit" value="Сделать заказ")
+				img.header-main__photo(src="static/images/general/bg1_salad.png", alt="Фото салата")
+		.header-main__img(style="background-image:url('static/images/general/bg1_3.jpg')")
+			.container.container--header-main
+				.header-main__label
+					h1.header-main__title Интересное название про напиток
+					p.header-main__subtitle Охлаждающий и бодрящий напиток с неповторимым вкусом
+					input.btn.submit-button.submit-button--header.text--white(type="submit" value="Сделать заказ")
+				img.header-main__photo(src="static/images/general/bg1_drink.png", alt="Фото напитка")
+
++icon("next_screen", "next-screen-button")

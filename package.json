@@ -47,6 +47,6 @@
     "slick-carousel": "^1.8.1",
     "smoothscroll-polyfill": "^0.4.4",
     "svg4everybody": "^2.1.9",
-    "underscore": "^1.9.1"
+    "underscore": "^1.12.1"
   }
 }
